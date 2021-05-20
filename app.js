@@ -43,6 +43,6 @@ app.use(function(req,res){
 res.status(404).render("404.ejs"); 
 }); 
 
-http.createServer(app).listen(3000,function(){
-console.log("geustBook app started on port 3000"); 
+http.createServer(app).listen(process.env.PORT || 3000,function(){
+console.log("geustBook app started "); 
 }); 
