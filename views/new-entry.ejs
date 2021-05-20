@@ -1,0 +1,16 @@
+<%- include('header'); %>
+<h2> write a new entry</h2>
+<form  method="post" role= "form">
+    <div class="form-group">
+        <label for="title "> title </label>
+        <input type="text" class="form-control" id="title" name="title" placeholder="entry title " required >
+    </div>
+    <div class="form-group">
+        <label for="content">entry text</label>
+        <textarea class="form-control" name="body" id="body" rows="3" required></textarea>
+    </div>
+    <div class ="form-group">
+        <input type="submit" value="post entry" class = "btn btn-primary ">
+    </div>
+</form>
+<%- include('footer');  %> 
